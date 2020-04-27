@@ -1,0 +1,47 @@
+<html>
+  <body>
+    <form [formGroup]="AddForm" (ngSubmit)="onSubmit()">
+  
+      <label>
+        ProductId:
+        <input type="number" formControlName="productId">
+      </label>
+      <input type="text" formControlName="productTitle">
+      <input type="number" formControlName="price">
+      <input type="text" formControlName="description">
+      <!-- <div formGroupName="ProductType"> -->
+        <input type="number" formControlName="typeId">
+        <input type="text" formControlName="type"> 
+      <!-- </div> -->
+      <button type="submit" class="add-product-btn">Add Product</button><br>
+    
+    </form>
+    <!-- <label for="add-product" class="addProduct-form">
+      <h1>WelCome</h1>
+      <h2>Create Products</h2>
+        <div [formGroup]="myGroup" (ngSubmit)="addProduct">
+        <label for="productid"><b>Enter ProductID</b></label><br> 
+        <input type="number" formControlName="productid" placeholder="Enter ProductID" ><br> 
+        <input type="text" formControlName="productName" placeholder="Enter ProductID" ><br> 
+
+         <label for="description"><b>Enter description</b></label><br> 
+        <textarea name="description"  placeholder="Enter Description" ngModel></textarea><br> 
+
+        <label for="productTitle"><b>Enter Title</b></label><br>
+        <input type="text" name="productTitle" placeholder="Enter ProductTitle" ngModel ><br>
+
+        <label for="price"><b>Enter ProductPrice/b></label><br>
+        <input type="number" name="price" placeholder="Enter ProductPrice" ngModel ><br>
+
+         <label for="price"><b>Enter ProductPrice/b></label><br>
+        <input type="number" name="typeID" placeholder="Enter ProductTypeID" ngModel ><br>
+         
+         <label for="price"><b>Enter ProductPrice/b></label><br>
+        <input type="text" name="type" placeholder="Enter ProductType" ngModel ><br> -->
+        <!-- <button type="submit" class="add-product-btn">Add Product</button><br>
+        
+         </div> 
+    </label> --> 
+  </body>  
+</html>
+    

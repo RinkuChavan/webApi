@@ -1,0 +1,36 @@
+
+<section>
+    <button>
+        Add Products
+    </button>
+</section>
+    <!-- <section class= "products-display" *ngFor="let product of products">
+       <section>{{product.productId}}</section>
+       <section>{{product.description}}</section>
+       <section>{{product.price}}</section>
+        <section>{{product.productTitle}}</section>
+        <section>
+            <button>Edit</button>
+            <button (click)="onDelete(product.productId)">Delete</button>
+            
+        </section>
+    </section> -->
+    <div class="row">
+    <div class= "col-md-4" *ngFor="let product of products">
+       <div class="display-block">
+        <section>{{product.productId}}</section>
+        <section>{{product.description}}</section>
+        <section>{{product.price}}</section>
+         <section>{{product.productTitle}}</section>
+         <section>
+        
+             <button>Edit</button>
+             <button (click)="onDelete(product.productId)">Delete</button>
+        </section>
+    </div> 
+    </div>
+ </div>
+ 
+     
+
+   
